@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pod | music</title>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="pod's homepage">
+<script src="../ui/ui.js"></script>
+<link rel="stylesheet" href="../ui/css.css">
+<link rel="stylesheet" href="css.css">
+<meta name="author" content="pod">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+  var audio;
+  var tracklist;
+  var tracks;
+  var current;
+  init();
+  function init() {
+    current = 0;
+	audio = $('audio');
+	tracklist = $('#tracklist');
+	tracks = tracklist.find('li a');
+	len = tracks.length;
+	audio[0].volume = 1;
+	audio[0].play();
+	tracklist.find('li a').click(function(e) {
+      e.preventDefault();
+      link = $(this);
+      current = link.parent().index();
+      run(link, audio[0]);
+  });
+  audio[0].addEventListener('ended', function(e) {
+    current++;
+	if (current == len) {
+        current = 0;
+		link = tracklist.find('li a')[0];
+	} else {
+      link = tracklist.find('li a')[current];
+	}
+	run($(link), audio[0]);
+  });
+}
+  
+function run(link, player) {
+  player.src = link.attr('href');
+  par = link.parent();
+  par.addClass('active').siblings().removeClass('active');
+  audio[0].load();
+  audio[0].play();
+  }
+});
+</script>
+</head>
+<body>
+<div id="body">
+<script>map();</script>
+<section id="top"><img src="../ui/layout_pieces/layout_header_transparent.gif" alt="" usemap="#top_links"></section>
+<div class="inContent">
+  <section class="lContainer">
+    <center><audio id="audio" controls style="width:100%;"></audio></center>
+  </section>
+  <section class="rContainer">
+	<h4>&rarr; Music</h4>
+    <div>
+	  <ul id="tracklist">
+        <li><a href="audios/PasteMarchDivision.flac">Paste March Division</a> 2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
+        <li><a href="audios/Bit_Silly.flac">bit silly</a> 2023.04.22 // <a href="https://www.mediafire.com/file/fsnajsvgo54vp5j/Bit_Silly.flac/file" target="_blank">FLAC download.</a></li>
+        <li><a href="audios/3r+958ff.flac">3r+958ff</a> 2024.11.04 // <a href="https://www.mediafire.com/file/qww7jtwjkrjuhwv/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></li>
+      </ul>
+	  </div>
+	  <div>
+	    <p>Production, mixing, visual renders made by yours truly.<br>My music is remix-friendly. All I ask is that my work is not reposted on Spotify and that I'm given proper credit.</p>
+      </div>
+	  <center><a href="https://openmpt.org/download" target="_blank"><img src="images/openmpt-button01.png" alt="Made with OpenMPT" title="Made with OpenMPT"></a><a href="https://ko-fi.com/gristlepod" target="_parent"><img src="images/donate.gif" alt="Support me!" title="Support me!"></a></center>
+  </section>
+</div>
+<section id="bottom"><img src="../ui/layout_pieces/layout_bottom_transparent.gif" alt="" usemap="#bottom_links"></section>
+</div>
+</body>
+</html>

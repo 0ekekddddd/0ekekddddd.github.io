@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>gristlepod | church of luchino</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="church of luchino">
+<meta name="author" content="pod">
+<link rel="stylesheet" href="css.css">
+<script src="content.js"></script>
+</head>
+<body>
+<div id="body">
+  <section id="top">
+  </section>
+  <div class="inContent">
+    <section class="lContainer">
+	  <audio controls id='audio'><source src='audios/timexile_sliiime.mp3'></audio>
+	  <h4>Entrance</h4>
+	  <ul>
+	    <li><a onclick="selectLink('entrance')">Home</a></li>
+		<li><a onclick="selectLink('photoGallery')">Photo Gallery</a></li>
+		<li><a onclick="selectLink('contact')">Contact</a></li>
+	  </ul>
+	  <h4>Who Is Luchino?</h4>
+	  <ul>
+	    <li><a onclick="selectLink('whoIsLuchino')">Who Is Luchino?</li>
+	    <li><a onclick="selectLink('luchinosMutations')">Luchino's Mutations</a></li>
+	    <li><a onclick="selectLink('ambiguityThemes')">Themes of Ambiguity</a></li>
+	  </ul>
+	  <h4>Webmaster's Bond</h4>
+	  <ul>
+	    <li><a onclick="selectLink('headcanonsList')">A List Of Headcanons</a></li>
+		<li><a onclick="selectLink('musicPlaylist')">Music Playlist</a></li>
+		<li><a onclick="selectLink('merchCollection')">Merchandise</a></li>
+	  </ul>
+	  <h4>The Sect of Luchinort</h4>
+	  <ul>
+	    <li><a onclick="selectLink('luchinort')">What Is Luchino x Norton?</a></li>
+	  </ul>
+	  <h4>Affiliate Ring</h4><div><ul><li><a href='https://gristlepod.github.io/'>gristlepod</a> (owner)</li><li><a href='https://lesbianclovers.carrd.co' target='_blank'>eatedcheese</a></li><li><a href='https://x.com/NPCdragonboi' target='_blank'>npcdragonboi</a></li><li><a href='https://x.com/S0pai' target='_blank'>sopai</a></li>
+	  <li><a href="https://x.com/m1ntoast">m1ntoast</a></li></ul></div>
+	</section>
+	<section class="rContainer" id="display">
+	  <script>selectLink("entrance")</script>
+	</section>
+  </div>
+  <div id="map">
+  </div>
+  <section id="bottom">
+	<p><center><img src='images/hunt_luchino_40x40.gif' alt='Pixel Luchino' title='Luchino drawn and animated by Gristlepod.'></center>church of luchino running since 2024<br>made with notepad, powered by github.<br>
+	<normal>Developed and updated by one fan. Identity V, Luchino Diruse, and official images featured on this site are properties sourced from NetEase® publisher. All content &copy; respective owners.</normal></p>
+  </section>
+</div>
+<script>
+const audioFiles = [
+  "audios/timexile_sliiime.mp3",
+  "audios/anklepants_presetoftheradicalsydneydubstepfad.mp3",
+  "audios/timexile_listeningtree.mp3"
+];
+let currentAudioIndex = 0;
+const audioURL = audioFiles;
+const audio = document.getElementById('audio');
+function changeAudio(audioURL) {
+  audio.src = audioURL;
+  audio.load();
+  audio.play();
+  }
+  document.querySelectorAll('h4 a').forEach(function(a, index) {
+    a.addEventListener('click', function() {
+    currentAudioIndex = index;
+    const audioURL = audioFiles[currentAudioIndex];
+    changeAudio(audioURL);
+  });
+});
+audio.addEventListener('ended', function() {
+    currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
+    const nextAudioURL = audioFiles[currentAudioIndex];
+    changeAudio(nextAudioURL);
+});
+</script>
+</body>
+</html>

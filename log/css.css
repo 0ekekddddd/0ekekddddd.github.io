@@ -1,0 +1,4 @@
+body{
+  background:url("../ui/backgrounds/monchhichi.png") no-repeat, url("../ui/backgrounds/animateshelf.png") no-repeat, url("../ui/backgrounds/mintile.gif") repeat !important;
+  background-position:top left, top right, top left !important;
+}

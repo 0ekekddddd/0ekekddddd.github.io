@@ -1,0 +1,7 @@
+function lContainer(){
+  document.write("<h4>Entrance</h4><ul><li><a href='.'>Home</a></li><li><a href='../'>Back to Homepage</a></li></ul><h4>The Mirror</h4><ul><li><a href='about-gyaruo-aristo.html'>What is Gyaruo Fashion &amp; Aristo?</a></li><li><a href='100questions.html'>100 Questions For An Ouji (2025)</a></li><li><a href='links.html'>Resources &amp; Links</a></li></ul><h4>The Wardrobe</h4><ul><li><a href='closet.html'>Closet Archive</a></li><li><a href='coordinategallery.html'>Coordinate Gallery</a></li><li><a href='itabag.html'>痛バ ItaBag Diary</a></li><li><a href='photoalbum.html'>Photo Album</a></li></ul><img src='layout_pieces/putumayo_stamp.png' alt='Team Putumayo!' title='Team Putumayo!'><img src='layout_pieces/sexpotrevenge_stamp.gif' alt='Team Sex Pot Revenge!' title='Team Sex Pot Revenge!'>");
+}
+
+function footer(){
+  document.write("<img src='layout_pieces/sunflowers_divider.gif' alt=''><br><a href='https://metamorphose.gr.jp/en/online-shop'><img src='layout_pieces/metamorphose_badge.png' alt='Metamorphose' title='Metamorphose'></a><br><img src='../ui/buttons/gyaruouser_badge.jpg' alt='This guy is a gyaruo!' title='This guy is a gyaruo!'><br><img src='img/index/lolita_not_cosplay.gif' alt='lolita ≠ cosplay' title='lolita ≠ cosplay'>");
+}
