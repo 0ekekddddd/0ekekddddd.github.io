@@ -45,7 +45,7 @@ img{margin:1px 1px 1px 1px;} img:hover{cursor:crosshair;}
 #bottom{min-height:140px;padding:10px 0px 0px 0px;text-align:center;no-repeat top left;border-style: var(--borderStyle) none none none;}
 #top{background:url("layout_pieces/top.png")no-repeat bottom left;border-style: none none var(--borderStyle) none;min-height:128px;}
 #bottom{color:#878787;}
-audio, audio:hover, .playlist, .gallery img{transition:.3s ease;}
+audio, audio:hover{transition:.3s ease;}
 .inContent{min-height:600px;padding:0px 5px 0px 5px;}
 .lContainer, .rContainer{border:1px var(--borderColor);}
 .lContainer{background:url('layout_pieces/nav.png') no-repeat; background-position:top left;padding:116px 0px 0px 0px; text-align:center;}
