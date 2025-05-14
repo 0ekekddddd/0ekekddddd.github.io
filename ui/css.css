@@ -16,9 +16,9 @@
 html{scroll-behavior: smooth;scrollbar-color: var(--jellySolid) #ffffff;
     scrollbar-width: auto;}
 body{
-  background:url("backgrounds/landing_01.png") no-repeat, url('backgrounds/landing_02.png') no-repeat, url("backgrounds/mingrid.gif") repeat;
-  background-size:300px, 300px, auto;
-  background-position:top left, bottom right, top;font-size:12px;
+  background:url("backgrounds/landing_01.png") no-repeat, url("backgrounds/mingrid.gif") repeat;
+  background-size: 150px, auto;
+  background-position:top left, top;font-size:12px;
   margin: 0 auto;
 }
 ::selection {background: var(--selectionColor);}
