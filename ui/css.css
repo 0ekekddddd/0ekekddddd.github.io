@@ -3,7 +3,6 @@
   --linkColor:#525252;
   --selectionColor:#00000030;
   --jellyGradient:linear-gradient(180deg, #ac7be8 5%, #7d49d1 39%, #a95eeb 92%);
-/* maliblue... linear-gradient(180deg, #baddff 5%,#80c1ff 39%, #c7e4f2 92%)*/
   --headingBorder:#3e0078;
   --jellySolid:#ce36d9;
   
@@ -31,9 +30,9 @@ a:hover{color:#000000;}
 p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
 p, h1, h2, h4, details, span, li, td{border:1px #000000;}
 h1, h2, h4{margin:0;}
-h3{background:url("backgrounds/tone.png"), #00000020; color:#00000090; margin: 5px 0px 5px 0px; padding:2px 5px 2px 5px;}
+h3, .lContainer h4{background:url("backgrounds/tone.png"), #00000020; color:#00000090; margin: 5px 0px 5px 0px; padding:2px 5px 2px 5px;}
 .rContainer > h4{text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
-ul{margin:0px 0px 3px 0px; padding:3px 0px 3px 35px;}
+ul{margin:0px 0px 3px 0px; padding:0px 0px 3px 35px;}
 li {list-style-type: "→ "; margin:0px 10px 0px 0px;}
 td{border-style:dotted dotted dotted dotted;}
 b{color:var(--jellySolid);}

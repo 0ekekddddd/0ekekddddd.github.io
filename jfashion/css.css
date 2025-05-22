@@ -34,7 +34,7 @@ ul li {list-style-type: "→ "; margin:0px 10px 0px 0px;
 a, a:visited{color:var(--linkColor);text-decoration:underline dotted;cursor:pointer;}
 a:hover{color:var(--linkHover);}
 h1, h2, h3, h4, details, span{padding:4px 10px 5px 10px;}
-h4 a, h4 a:hover{color:#ffffff;text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder);}
+.rContainer h4 a, .rContainer h4 a:hover, .rContainer h4 a:visited{color:#ffffff;text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder);}
 p,center{padding:0px 10px 0px 10px;}
 b{color:#c29136;}
 h1, h2, h4 {margin:0;width:auto;color:var(--heading); text-shadow:#bgColor;text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
@@ -51,8 +51,11 @@ audio, audio:hover{transition:.3s ease;}
 .lContainer{background:url('layout_pieces/nav.png') no-repeat; background-position:top left;padding:116px 0px 0px 0px; text-align:center;}
 .lContainer > div, .rContainer >  div, .lContainer > td, .rContainer > td, .lContainer > ul, .rContainer > ul, h4{text-align:left !important;}
 .lContainer > div, .rContainer >  div, .lContainer > td, .rContainer > td, .lContainer > ul, .rContainer > ul{background:var(--rContainerBg);}
+.lContainer > div h4{padding:0px 10px 0px 10px;}
 .lContainer audio{width:100%;}
 .rContainer div, .lContainer div, .lContainer ul, td {border: 1px var(--borderColor);}
+.rContainer div, .lContainer div{padding:5px 0px 5px 0px;}
+.lContainer > ul, .lContainer > div{border-style:var(--borderStyle) none var(--borderStyle) var(--borderStyle);}
 .inContent .lContainer > h4, .inContent .rContainer > h4{background: url("layout_pieces/floral_border.png") repeat-x;}
 .rContainer img{max-width:290px;}
 .gallery img{width:49%;position:relative;} .gallery img:hover{transform:scale(140%);z-index:10;}
