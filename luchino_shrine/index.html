@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>pod | church of luchino</title>
+<title>Glaciale Undertone - Luchino Diruse Network</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="church of luchino">
-<meta name="author" content="pod">
+<meta name="description" content="the church of luchino">
 <link rel="stylesheet" href="css.css">
 <script src="content.js"></script>
 <script src="../ui/ui.js"></script>
@@ -16,72 +15,13 @@
   </section>
   <div class="inContent">
     <section class="lContainer">
-	  <audio controls id='audio'><source src='audios/timexile_sliiime.mp3'></audio>
-	  <h4>Entrance</h4>
-	  <ul>
-	    <li><a href="https://0ekekddddd.github.io/">https://0ekekddddd.github.io/</a></li>
-	    <li><a onclick="selectLink('entrance')">Home</a></li>
-		<li><a onclick="selectLink('photoGallery')">Photo Gallery</a></li>
-		<li><a onclick="selectLink('contact')">Contact</a></li>
-	  </ul>
-	  <h4>Who Is Luchino?</h4>
-	  <ul>
-	    <li><a onclick="selectLink('whoIsLuchino')">Who Is Luchino?</li>
-	    <li><a onclick="selectLink('luchinosMutations')">Luchino's Mutations</a></li>
-	    <li><a onclick="selectLink('ambiguityThemes')">Themes of Ambiguity</a></li>
-	  </ul>
-	  <h4>Webmaster's Bond</h4>
-	  <ul>
-	    <li><a onclick="selectLink('headcanonsList')">A List Of Headcanons</a></li>
-		<li><a onclick="selectLink('musicPlaylist')">Music Playlist</a></li>
-		<li><a onclick="selectLink('merchCollection')">Merchandise</a></li>
-	  </ul>
-	  <h4>The Sect of Luchinort</h4>
-	  <ul>
-	    <li><a onclick="selectLink('luchinort')">What Is Luchino x Norton?</a></li>
-	  </ul>
-	  <h4>Affiliate Ring</h4><div><ul><li><a href='https://gristlepod.github.io/'>gristlepod</a> (owner)</li><li><a href='https://lesbianclovers.carrd.co' target='_blank'>eatedcheese</a></li><li><a href='https://x.com/NPCdragonboi' target='_blank'>npcdragonboi</a></li><li><a href='https://x.com/S0pai' target='_blank'>sopai</a></li>
-	  <li><a href="https://x.com/m1ntoast">m1ntoast</a></li></ul></div>
-	  <h4>Explore TKR</h4>
-	  <script>logMap()</script>
+	  <script>lContainer(); </script>
 	</section>
 	<section class="rContainer" id="display">
-	  <script>selectLink("entrance")</script>
+	  <h4 id='entrance'>&rarr; Home - Welcome to The Church Of Luchino Diruse.</h4><div><p>Luchino Diruse is a heart-to-heart message from his designers about their own passions for herpetology, Lovecraft, and gothic metamorphose.</p><p>Welcome yourself to read about Luchino, and my bond with his media by exploring the sitemap to the left.</p><p>Recovery! Rebirth! Emerge.</p></div><h4>&rarr; Explore Luchino x Norton Artists</h4><div><p>A list of artists not affiliated with the site, but deserve attention.</p><ul><li><a href='https://twitter.com/ntlkonly' target='_blank'>Not Looky!! Web Event</a></li><li><a href='https://twitter.com/saichiidv' target='_blank'>https://twitter.com/saichiidv</a></li><li><a href='https://twitter.com/shino_e8' target='_blank'>https://twitter.com/shino_e8</a></li><li><a href='https://twitter.com/pensablee' target='_blank'>https://twitter.com/pensablee</a></li><li><a href='https://twitter.com/imoyarou_imoimo' target='_blank'>https://twitter.com/imoyarou_imoimo</a></li></ul></div><h4>&rarr; Support The Site</h4><center class='gallery'><a href='https://ko-fi.com/s/2fe85de556' target='_blink'><img src='images/luchinortinvasion_banner.png' alt='' style='image-rendering: auto;'></a></center>
 	</section>
   </div>
-  <div id="map">
-  </div>
-  <section id="bottom">
-	<p><center><img src='images/hunt_luchino_40x40.gif' alt='Pixel Luchino' title='Luchino drawn and animated by Gristlepod.'></center>church of luchino running since 2024<br>made with notepad, powered by github.<br>
-	<normal>Developed and updated by one fan. Identity V, Luchino Diruse, and official images featured on this site are properties sourced from NetEase® publisher. All content &copy; respective owners.</normal></p>
-  </section>
+  <script>luchinoFooter();</script>
 </div>
-<script>
-const audioFiles = [
-  "audios/timexile_sliiime.mp3",
-  "audios/anklepants_presetoftheradicalsydneydubstepfad.mp3",
-  "audios/timexile_listeningtree.mp3"
-];
-let currentAudioIndex = 0;
-const audioURL = audioFiles;
-const audio = document.getElementById('audio');
-function changeAudio(audioURL) {
-  audio.src = audioURL;
-  audio.load();
-  audio.play();
-  }
-  document.querySelectorAll('h4 a').forEach(function(a, index) {
-    a.addEventListener('click', function() {
-    currentAudioIndex = index;
-    const audioURL = audioFiles[currentAudioIndex];
-    changeAudio(audioURL);
-  });
-});
-audio.addEventListener('ended', function() {
-    currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
-    const nextAudioURL = audioFiles[currentAudioIndex];
-    changeAudio(nextAudioURL);
-});
-</script>
 </body>
 </html>
