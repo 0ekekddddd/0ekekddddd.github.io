@@ -49,7 +49,7 @@ section > div{
 }
 table{width:100%;}
 td{padding:3px 4px 3px 4px;}
-td, .lContainer ul, .rContainer > ul, h4{background:url("backgrounds/tone.png");}
+td, .lContainer ul, .rContainer > ul, h4, h3{background:url("backgrounds/tone.png");}
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 #body{width:644px;}
