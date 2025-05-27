@@ -2,9 +2,9 @@
 :root{
   --linkColor:#525252;
   --selectionColor:#00000030;
-  --jellyGradient:linear-gradient(180deg, #ac7be8 5%, #7d49d1 39%, #a95eeb 92%);
-  --headingBorder:#3e0078;
-  --jellySolid:#ce36d9;
+  --jellyGradient:linear-gradient(180deg, #c99dab 5%, #d46a86 39%, #e398b0 92%);
+  --headingBorder:#000000;
+  --jellySolid:#a3083a;
   --divSolid:linear-gradient(0deg, #ededed 1%, #ffffff 30%);
   --divInset:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
   --fontSizeMobile:14px;

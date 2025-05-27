@@ -1,4 +1,4 @@
 body{
-  background:url("../ui/backgrounds/monchhichi.png") no-repeat, url("../ui/backgrounds/animateshelf.png") no-repeat, url("../ui/backgrounds/mintile.gif") repeat !important;
-  background-position:top left, top right, top left !important;
+  background:url("../ui/backgrounds/monchhichi.png") no-repeat, url("../ui/backgrounds/landing_01.png") no-repeat, url("../ui/backgrounds/animateshelf.png") no-repeat, url("../ui/backgrounds/mingrid.png") repeat !important;
+  background-position:top left, top left, top right, top left !important;
 }
