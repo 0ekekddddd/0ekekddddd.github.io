@@ -35,6 +35,8 @@ a:hover{color:var(--linkHover);}
 h3{background:url("../ui/backgrounds/tone.png"), #00000020; color:#00000090; margin: 5px 0px 5px 0px; padding:2px 5px 2px 5px;}
 p{padding:0px 10px 0px 10px;}
 h1, h2, h3, h4, details, span{padding:4px 10px 5px 10px;}
+mark{background:#e3e3e3;}
+summary{cursor:pointer;}
 h1, h2, h4 {margin:0;width:auto;color:var(--heading); text-shadow:#bgColor;text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 table{width:100%;}
