@@ -82,7 +82,7 @@ audio, audio:hover{transition:.3s ease;}
   body{font-family: "sans", sans-serif; font-size:16px !important;}
   table td:nth-child(2){width:35vw !important; height:35vw;}
   #body{width:95%;}
-  #top{background-size:100%;}
+  #top{background-position:100% 0%;}
   .inContent{width:97%;margin:0 auto;}
   .inContent section{margin:0px 0px 0px 0px;}
   .lContainer{background-position:top left;background-position:top;}
