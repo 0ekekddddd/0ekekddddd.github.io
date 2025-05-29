@@ -80,7 +80,7 @@ audio, audio:hover, .playlist, .gallery img{transition:.5s ease;}
 /* MOBILE */
 
 @media screen and (max-width:699px){
-  body{font-family: "MS PGothic", sans-serif; font-size:12px !important;}
+  body{font-family: "MS PGothic", sans-serif; font-size:12px !important; min-width:750px;}
   table td:nth-child(2){width:35vw !important; height:35vw;}
   #body{width:85%;}
   #top{background-position:50% 0%;}
