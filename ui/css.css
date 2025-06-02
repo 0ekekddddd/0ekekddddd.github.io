@@ -69,7 +69,7 @@ quiet{color:#00000050;}
 .inContent img, .inContent video, center > img, center > video{max-width:95%;}
 
 .inContentSingle{display:block;}
-#top, #singleTop{min-height:116px;}
+#top, #singleTop{min-height:116px; max-height:116px;}
 #top{background:url('layout_pieces/layout_header_multi.png');}
 #minimalTop{background:url('layout_pieces_minimal/layout_header.png');min-height:90px;}
 #singleTop{background:url('layout_pieces/layout_header_single.png');}
