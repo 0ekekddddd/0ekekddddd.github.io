@@ -149,5 +149,5 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
   #bottom, #singleBottom{background:url('layout_pieces/layout_bottom_bisplit.png');}
   #minimalBottom{background:url('layout_pieces_minimal/layout_bottom_single.png');}
   .lContainer{min-width:321px;}
-  .rContainer{background:url('layout_pieces/layout_rContainer_bisplit.png')!important;}
+  .rContainer{background:url('layout_pieces/layout_rcontainer_bisplit.png')!important;}
 }
