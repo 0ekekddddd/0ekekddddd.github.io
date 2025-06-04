@@ -12,11 +12,11 @@ function logMap(){
   const blogList = '<h4>'+ blogPosts[0] +'</h4><ul><li>'+ blogPosts[1] +'</li><li>'+ blogPosts[2] +'</li><li>'+ blogPosts[3] +'</li><li>'+ blogPosts[4] +'</li><li>'+ blogPosts[5] +'</li><li>'+ blogPosts[6] +'</li><li>'+ blogPosts[7] +'</li><li>'+ blogPosts[8] +'</li></ul>';
   const fashionList = '<h4>'+ fashionPosts[0] +'</h4><ul><li>'+ fashionPosts[1] +'</li><li>'+ fashionPosts[2] +'</li><li>'+ fashionPosts[3] +'</li><li>'+ fashionPosts[4] +'</li><li>'+ fashionPosts[5] +'</li><li>'+ fashionPosts[6] +'</li><li>'+ fashionPosts[7] + '</li></ul>';
   const luchinoShrineList = '<h4>'+ luchinoShrinePosts[0] +'</h4><ul><li>'+ luchinoShrinePosts[1] +'</li><li>'+ luchinoShrinePosts[2] +'</li><li>'+ luchinoShrinePosts[3] +'</li><li>'+ luchinoShrinePosts[4] +'</li><li>'+ luchinoShrinePosts[5] +'</ul>';
-  document.write('<div><h4><a href="https://' + siteURL + '/">Landing</a></h4><h4><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></h4>'+ blogList + fashionList  + luchinoShrineList + '<h4><a href="https://' + siteURL + '/music/">私の音 My Music</a></h4><h4><a href="https://' + siteURL + '/about">About The Site</a></h4></div>');
+  document.write('<div><h4><a href="https://' + siteURL + '/">Landing</a></h4><h4><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></h4>'+ blogList + fashionList  + luchinoShrineList + '<h4><a href="https://' + siteURL + '/music/">私の音 My Music</a></h4><h4><a href="https://' + siteURL + '/about">About The Site</a></h4></div><img src="https://' + siteURL + '/ui/images/snail.gif" alt="">');
 }
 
-function rssList(){
-  document.write('<hr><center><a href="https://' + siteURL + '/log/update/">update log</a> | <a href="https://' + siteURL + '/log/">personal log</a> | <a href="https://' + siteURL + '/about">about me</a> | <a href="https://' + siteURL + '/rss/rss.xml">subscribe to the rss</a></center>');
+function txtMenu(){
+  document.write('<hr><center><a href="https://' + siteURL + '">home</a> | <a href="https://' + siteURL + '/log/update/">update log</a> | <a href="https://' + siteURL + '/music/">my music</a> | <a href="https://' + siteURL + '/log/">personal log</a> | <a href="https://' + siteURL + '/about">about me</a> | <a href="https://' + siteURL + '/rss/rss.xml">subscribe to the rss</a></center>');
 }
 
 function loadAsset(){
@@ -33,6 +33,7 @@ function loadAsset(){
 	break;
 	case 3:
 	  assetPiece = "bottom"
+	  txtMenu();
 	  document.write('</section></div><section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section>');
 	break;
   }
