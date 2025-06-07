@@ -15,17 +15,15 @@ function logMap(){
   document.write('<div><h4><a href="https://' + siteURL + '/">Landing</a></h4><h4><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></h4>'+ blogList + fashionList  + luchinoShrineList + '<h4><a href="https://' + siteURL + '/music/">私の音 My Music</a></h4><h4><a href="https://' + siteURL + '/about">About The Site</a></h4></div><img src="https://' + siteURL + '/ui/images/snail.gif" alt="">');
 }
 
-function txtMenu(){
-  document.write('<hr><center><a href="https://' + siteURL + '">home</a> | <a href="https://' + siteURL + '/log/update/">update log</a> | <a href="https://' + siteURL + '/music/">my music</a> | <a href="https://' + siteURL + '/log/">personal log</a> | <a href="https://' + siteURL + '/about">about me</a> | <a href="https://' + siteURL + '/rss/rss.xml">subscribe to the rss</a></center>');
-}
-
 function loadAsset(){
   var assetPiece;
+  function imageMapHTML(){ document.write('<section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section><div class="inContent"><section class="lContainer">');
+  }
   switch(siteArea){
 	case 1:
 	  assetPiece = "top";
 	  document.write('<map name="top_links"><area shape="rect" alt="[Home]" coords="389,19,631,89" href="https://'+ siteURL +'" target="_parent"></map><map name="bottom_links"><area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://gristlepod.github.io" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent"></map><div id="body">');
-	  document.write('<section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section><div class="inContent"><section class="lContainer">');
+	  imageMapHTML();
 	break;
 	;
 	case 2:
@@ -33,7 +31,20 @@ function loadAsset(){
 	break;
 	case 3:
 	  assetPiece = "bottom"
-	  txtMenu();
+	  document.write('<hr><center><a href="https://' + siteURL + '">home</a> | <a href="https://' + siteURL + '/log/update/">update log</a> | <a href="https://' + siteURL + '/music/">my music</a> | <a href="https://' + siteURL + '/log/">personal log</a> | <a href="https://' + siteURL + '/about">about me</a> | <a href="https://' + siteURL + '/rss/rss.xml">subscribe to the rss</a></center></section></div><section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section>');
+	break;
+	case 4:
+	  assetPiece = "top";
+	  document.write('<map name="top_links"><area shape="rect" alt="[Home]" coords="389,19,631,89" href="https://'+ siteURL +'" target="_parent"></map><map name="bottom_links"><area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://gristlepod.github.io" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent"></map><div id="treeBody">');
+	  imageMapHTML();
+	  document.write('<div class="banner"></div>');
+	break;
+	;
+	case 5:
+	  document.write('</section><section class="rContainer">');
+	break;
+	case 6:
+	  assetPiece = "bottom"
 	  document.write('</section></div><section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section>');
 	break;
   }
