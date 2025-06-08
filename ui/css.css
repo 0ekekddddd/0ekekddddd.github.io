@@ -27,7 +27,7 @@ hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);b
 }
 audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
 audio:hover{filter:opacity(50%);}
-a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000;}
+a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
 a:hover{color:#000000;}
 p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
 p, h1, h2, h4, details, span, li, td{border:1px #000000;}
