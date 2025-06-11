@@ -1,4 +1,4 @@
-const siteURL = '0ekekddddd.github.io';
+const siteURL = 'texaskissrhinestone.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
 function quickBio(){
