@@ -36,9 +36,9 @@ h3, h4{ color:#00000090; padding:4px 4px 4px 4px; text-align:start; margin: 5px 
 ul{margin:0px 0px 3px 0px; padding:3px 0px 3px 35px;}
 ul li{list-style-type: "→ ";}
 li { margin:0px 10px 0px 0px;text-align:start;}
+div{position:relative;} section > div{border: #000000;}
 td{border-style:dotted dotted dotted dotted;}
 b{color:var(--jellySolid);}
-section > div{border: #000000;}
 table{width:100%;}
 td{padding:3px 4px 3px 4px;}
 td, #body .lContainer ul, #body .rContainer > ul, h4, h3{background:url("backgrounds/tone.png");}
