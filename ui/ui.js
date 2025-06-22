@@ -2,7 +2,7 @@ const siteURL = 'texaskissrhinestone.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
 function quickBio(){
-  document.write('<div><img src="https://'+ siteURL +'/ui/images/reisen.gif" style="width:70px;position:absolute;top:-50px;right:-17px;pointer-events:none;"><p>they/them. <a href="https://lgbtqia.wiki/wiki/Biromantic" target="_blank">birom</a>-<a href="https://lgbtqia.wiki/wiki/Monogamous" target="_blank">monoam</a>. illustrator &amp; okay coder.<br><normal style="color:#00000050;"><a href="https://youtu.be/ckMvj1piK58?si=Hw6t5mdkyaD7gMaK&t=24" target="_blank">donk</a>ey-caiman-badger.</normal></p></div><div><p>irl<b>tkr</b> &mdash; Web developer &amp; designer. Working full-time. E-mail for collaboration.</p></div><a href="mailto:'+ mailAddress +'"><img src="https://'+ siteURL +'/ui/images/mailbox.gif"></a>');
+  document.write('<div><p>they/them. <a href="https://lgbtqia.wiki/wiki/Biromantic" target="_blank">birom</a>-<a href="https://lgbtqia.wiki/wiki/Monogamous" target="_blank">monoam</a>. illustrator &amp; okay coder.<br><normal style="color:#00000050;"><a href="https://youtu.be/ckMvj1piK58?si=Hw6t5mdkyaD7gMaK&t=24" target="_blank">donk</a>ey-caiman-badger.</normal></p></div><div><p>irl<b>tkr</b> &mdash; Web developer &amp; designer. Working full-time. E-mail for collaboration.</p></div><a href="mailto:'+ mailAddress +'"><img src="https://'+ siteURL +'/ui/images/mailbox.gif"></a>');
 }
 function rssBlock(){
   document.write('<h4>Latest Site Update</h4><div class="feedBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div>');
@@ -19,6 +19,9 @@ function logMap(){
 
 function loadAsset(){
   var assetPiece;
+  function readerUI(){
+	document.write('<a href="#'+ "top" +'"><img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:0;right:0;"></a>');
+  }
   function imageMapHTML(){ document.write('<section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section><div class="inContent"><section class="lContainer">');
   }
   switch(siteArea){
@@ -34,6 +37,7 @@ function loadAsset(){
 	case 3:
 	  assetPiece = "bottom"
 	  document.write('<hr><center><a href="https://' + siteURL + '">home</a> | <a href="https://' + siteURL + '/log/update/">update log</a> | <a href="https://' + siteURL + '/music/">my music</a> | <a href="https://' + siteURL + '/log/">personal log</a> | <a href="https://' + siteURL + '/about">about me</a> | <a href="https://' + siteURL + '/rss/rss.xml">subscribe to the rss</a></center></section></div><section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section>');
+	  readerUI();
 	break;
 	case 4:
 	  assetPiece = "top";
@@ -48,6 +52,7 @@ function loadAsset(){
 	case 6:
 	  assetPiece = "bottom"
 	  document.write('</section></div><section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section>');
+	  readerUI();
 	break;
   }
 }
