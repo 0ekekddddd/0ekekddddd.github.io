@@ -31,7 +31,7 @@ audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style:
 audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
 a:hover{color:#000000;}
-p, h1, h2, h3, h4, details, span, center{padding:0px 10px 0px 10px;}
+p, h1, h2, h3, h4, details, span, center, quiet{padding:0px 10px 0px 10px;display:block;}
 p, h1, h2, h4, details, span, li, td{border:1px #000000;}
 h1, h2, h4{margin:0;}
 h3{border:1px var(--headingBorder); border-style:var(--treeBorderStyle) none var(--treeBorderStyle) none;}
@@ -57,7 +57,7 @@ quiet{color:#00000050;}
 }
 #top, #bottom{background-repeat: no-repeat !important;}
 #top{min-height:116px; max-height:116px;}
-.lContainer .rContainer {img{padding:2px 4px;}}
+.lContainer, .rContainer {img{ padding:0px 2px;}}
 .lContainer{ background:url('layout_pieces/layout_lcontainer.png'); padding:5px 0px 0px 14px; text-align:center; width:204px;
   div, div{text-align:start}
   textarea{max-width:149px; min-width:149px;}
