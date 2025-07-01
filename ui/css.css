@@ -118,9 +118,9 @@ quiet{color:#00000050;}
 }
 /*TREE THEME END*/
 /*SINGLE THEME START*/
-#singleBody{color:#ffffff !important; h3, h4, b{color:#ffffff !important;}
-  .inContent{background:url('layout_pieces/layout_mid_tree.png') left top, url('backgrounds/machine_tile.png') repeat-y center; padding:0px 26px 0px 30px; display:block;}
-  > div > div{ background:#00000078; padding: 10px 0px 10px 0px;border-radius:10px; width:95%; margin:0 auto;}
+#singleBody{color:#ffffff !important; h3, h4, b{color:#ffffff !important;}iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
+  .inContent{background:url('layout_pieces/layout_mid_tree.png') left top, url('backgrounds/machine_tile.png') repeat-y center; padding:5px 26px 5px 30px; display:block;}
+  > div > div{ background:#000000a6; padding: 5px 0px 5px 0px;border-radius:10px; width:95%; margin:5px auto;}
   #top{background:url('layout_pieces/layout_header_tree.png');}
   #bottom{background:url('layout_pieces/layout_bottom_tree.png');}
 }
