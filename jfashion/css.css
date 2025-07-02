@@ -1,16 +1,17 @@
 /* GLOBAL ROOT */
 :root{
-  --bgPattern:url("layout_pieces/dotbg.png");
+  --bgPattern:url("ui/dotbg.png");
   --bgBackdrop:url("../ui/backgrounds/gobelin.gif");
   --headingBorder:#ffffff;
   --boldTxt:#4b4d00;
+  --themeBG:url('../ui/backgrounds/gobelin.gif');
 }
-.inContent{background:url('../ui/backgrounds/gobelin.gif') repeat-y; background-position: center !important;}
+.inContent{background:var(--themeBG) repeat-y; background-position: center !important;}
 h4{
   text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);
   color:var(--boldTxt);
 }
 .lContainer .banner{
-  background:url('layout_pieces/aatp_banner.png') !important;
+  background:url('ui/aatp_banner.png') !important;
 }
 b{color:var(--boldTxt);}
