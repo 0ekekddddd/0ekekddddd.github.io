@@ -60,7 +60,7 @@ quiet{color:#00000050;}
 }
 #top, #bottom{background-repeat: no-repeat !important;}
 #top{min-height:116px; max-height:116px;}
-.lContainer, .rContainer {img{ padding:0px 2px;}}
+.lContainer, .rContainer {img{ padding:0px 1px 0px 1px;}}
 .lContainer{ background:url('layout_pieces/layout_lcontainer.png'); padding:5px 0px 0px 14px; text-align:center; width:204px;
   div, div{text-align:start}
   textarea{max-width:149px; min-width:149px;}
@@ -107,8 +107,8 @@ quiet{color:#00000050;}
   .rContainer td, .rContainer > ul, .rContainer > div{ border-style: var(--treeBorderStyle) var(--treeBorderStyle) var(--treeBorderStyle) none;}
   #top{background:url('layout_pieces/layout_header_tree.png');}
   #bottom{background:url('layout_pieces/layout_bottom_tree.png');}
-  .lContainer{background:url('layout_pieces/layout_mid_tree.png') left top; border-style:none var(--treeBorderStyle) none none; text-align:center; padding:0px 0px 0px 45px; width:360px;}
-  .rContainer{background:url('layout_pieces/layout_mid_tree.png') right top; padding:0px 40px 0px 0px; width:100%;}
+  .lContainer{background:url('layout_pieces/layout_mid_tree.png') left top; border-style:none var(--treeBorderStyle) none none; text-align:center; padding:0px 0px 0px 40px; width:360px;}
+  .rContainer{background:url('layout_pieces/layout_mid_tree.png') right top; padding:0px 35px 0px 0px; width:100%;}
   .banner{background-position:top right; background-repeat:none; width:225px; height:95px; border:none !important;}
 }
 /*tree theme mobile*/
