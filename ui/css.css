@@ -46,7 +46,7 @@ td{border-style:dotted dotted dotted dotted;}
 b{color:var(--jellySolid);}
 textarea{margin:5px auto 5px auto; display: block; min-height:60px;font-family: "MS PGothic", sans-serif;font-size:12px;}
 table{width:100%;}
-td{padding:3px 4px 3px 4px;}
+td{border:var(--treeBorderStyle) 1px var(--headingBorder) !important; padding:3px 4px 3px 4px;}
 td, #body .lContainer ul, #body .rContainer > ul, h4, h3, h2, h1{background:url("backgrounds/tone.png"); border:1px var(--headingBorder);}
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
