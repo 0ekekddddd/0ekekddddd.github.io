@@ -16,14 +16,14 @@
 }
 
 /* GLOBAL */
-
+@media screen and (max-width:789px){html{min-height:1400px;}}
 html{scroll-behavior: smooth; scrollbar-color: var(--jellySolid) #ffffff; scrollbar-width: auto;font-family: "MS PGothic", sans-serif;}
 body{
   background:url("backgrounds/landing_01.png") no-repeat, linear-gradient(#ffffff 0%, #ffffff00 10%, #00000000 100%) no-repeat, url("backgrounds/grain-tile.gif") repeat;
   background-size: 150px, auto, auto;
   background-position:top left, top;font-size:var(--fontSizeDesktop);
   background-attachment:fixed;
-  min-width:770px;
+  min-width:789px;
   margin: 0 auto;
 }
 ::selection {background: var(--selectionColor);}
