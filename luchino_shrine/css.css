@@ -1,8 +1,6 @@
 :root{
   --bgColor:#e1e3e1;
   --bgColorOpacity:#e1e3e160;
-  --bgPattern:url("layout_pieces/dotbg.png");
-  --bgBackdrop:url("../ui/backgrounds/gobelin.gif");
   --boldTxt:#f2f2f2;
   --liLinkBorder:#b33b00;
 }
@@ -12,14 +10,13 @@ body{
   background-position:top left, top, top right, top;font-size:var(--fontSizeDesktop);
   margin: 0 auto;
 }
-h4{text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);
-  color:var(--boldTxt);}
+h1, h2, h3, h4{text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder); color:var(--boldTxt);}
+h1{font-size:16px;}
 mark {background: #00000030;}
-#treeBody h4 a, #treeBody h4 a:visited{text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder); color:#ffffff;}
+#treeBody {h1, h2, h3, h4{a, a:visited{text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder); color:#ffffff;}}}
 .inContent{background:linear-gradient(90deg,#00000000 2%, #ffffff30 10%, #ffffffb4 40%, #ffffffb4 60%, #ffffff30 90%, #00000000 98%), url('../ui/backgrounds/moss.gif') repeat-y; background-position: center !important;}
-.lContainer > h4{background: url("layout_pieces/bill_scales_texture-flip.gif") repeat-x;}
-.rContainer > h4{background: url("layout_pieces/bill_scales_texture.gif")repeat-x}
-.demo{height:135px;}
+.lContainer > h1{background: url("layout_pieces/bill_scales_texture-flip.gif") repeat-x 0px 4px;}
+.rContainer > h1{background: url("layout_pieces/bill_scales_texture.gif")repeat-x 0px 4px}
 .lContainer .banner{
   min-height:200px; background:url('layout_pieces/nav.png') !important;
 }
