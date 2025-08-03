@@ -5,5 +5,5 @@ function luchinoFooter(){
   document.write('<h4>Blog Statement</h4><div><p>Developed and updated by one person. <br>Powered by Github, stapled together in Notepad++.<br>Images feature official properties of NetEase® publisher.</p><p>All content &copy; respective owners.</center></div><center></p>');
 }
 function checkPoint(){
-  document.write('<center><img src="layout_pieces/blogbanner.png" alt=""></center>');
+  document.write('<center><a href="." target="_parent"><img src="layout_pieces/blogbanner.png" alt=""></a></center>');
 }
