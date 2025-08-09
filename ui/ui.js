@@ -15,7 +15,7 @@ function updateIcon(){
 }
 function logMap(){
   badgeLink();
-  document.write('<div><h3>Browse Posts</h3><table class="verticalTableMenu"><tr><td><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">TKR Fashion Log</a></td></tr><tr><td><a href="luchino_shrine/">Visit the Luchino Fansite!</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 Original Music</a></td></tr><tr><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table></div>');
+  document.write('<div><h3>Browse Posts</h3><table class="verticalTableMenu"><tr><td><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">TKR Fashion Log</a></td></tr><tr><td><a href="https://' + siteURL + '/luchino_shrine/">Visit the Luchino Fansite!</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 Original Music</a></td></tr><tr><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table></div>');
 }
 
 function loadAsset(){
