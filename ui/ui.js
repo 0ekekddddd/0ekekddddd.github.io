@@ -2,10 +2,13 @@ const siteURL = 'texaskissrhinestone.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
 function quickBio(){
-  document.write('<div><p><img src="ui/images/atglasses.gif" style="pointer-events:none;float:left;padding:0px 9px 0px 0px;"> Web developer &amp; designer. Working full-time. E-mail for collaboration.</p></div><div><p>they/them. <a href="https://lgbtqia.wiki/wiki/Biromantic" target="_blank">birom</a>-<a href="https://lgbtqia.wiki/wiki/Monogamous" target="_blank">monoam</a>. illustrator &amp; okay coder.<br><normal style="color:#00000050;"><a href="https://youtu.be/ckMvj1piK58?si=Hw6t5mdkyaD7gMaK&t=24" target="_blank">donk</a>ey-caiman-badger.</normal></p></div>');
+  document.write('<div><p><img src="ui/images/atglasses.gif" style="pointer-events:none;float:left;padding:0px 9px 0px 0px;"> Web developer &amp; designer. Working full-time. E-mail for collaboration.</p></div>');
 }
 function badgeLink(){
   document.write('<div><center><br><a href="'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></center><textarea><a href="'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet></div>');
+}
+function browsePosts(){
+  document.write('<div><table><tr><td><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">TKR Fashion Log</a></td></tr><tr><td><a href="https://' + siteURL + '/luchino_shrine/">Visit the Luchino Fansite!</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 Original Music</a></td></tr><tr><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table></div>');
 }
 function rssBlock(){
   document.write('<h1>Latest Site Update</h1><div class="feedBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div>');
@@ -15,9 +18,8 @@ function updateIcon(){
 }
 function logMap(){
   badgeLink();
-  document.write('<div><h3>Browse Posts</h3><table class="verticalTableMenu"><tr><td><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">TKR Fashion Log</a></td></tr><tr><td><a href="https://' + siteURL + '/luchino_shrine/">Visit the Luchino Fansite!</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 Original Music</a></td></tr><tr><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table></div>');
+  browsePosts();
 }
-
 function loadAsset(){
   var assetPiece;
   function readerUI(){
