@@ -130,7 +130,8 @@ quiet{color:#00000050;}
 }
 /*SINGLE THEME END*/
 /*OFFSITE CUSTOMS START*/
-#CultofUsakumya {background:none !important;
-  border:0 !important; td{background:none !important;border:0 !important; padding: 0 !important;}
+#CultofUsakumya {background:none !important; border:0 !important;
+  table{width:auto;}
+  td{background:none !important;border:0 !important; padding: 0 !important;}
 }
 /*OFFSITE CUSTOMS END*/
