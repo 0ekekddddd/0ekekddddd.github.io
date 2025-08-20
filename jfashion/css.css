@@ -8,7 +8,7 @@
 }
 .inContent{background:var(--themeBG) repeat-y; background-position: center !important;}
 h4, h3, h2, h1{text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; color:var(--boldTxt);}
-.lContainer .banner{
+.banner{
   background:url('ui/aatp_banner.png') !important;
 }
 b{color:var(--boldTxt);}
