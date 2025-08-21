@@ -33,7 +33,7 @@ function badgeLink(){
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tr><td colspan="2"><a href="' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td><td><a href="https://' + siteURL + '/log/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion Log</a></td><td><a href="https://' + siteURL + '/luchino_shrine/">Luchino Fansite</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table>';
+  x.innerHTML = '<table><tr><td colspan="2"><a href="' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion Log</a></td><td><a href="https://' + siteURL + '/luchino_shrine/">Luchino Fansite</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table>';
   document.getElementById('lContainer').appendChild(x);
 }
 function rssBlock(){
