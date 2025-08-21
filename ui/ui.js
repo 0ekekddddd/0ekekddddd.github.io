@@ -33,17 +33,14 @@ function badgeLink(){
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tr><td colspan="2"><a href="' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></td></tr><tr><td><a href="https://' + siteURL + '/log/">All Blogposts</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion Log</a></td><td><a href="https://' + siteURL + '/luchino_shrine/">Luchino Fansite</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">私の音 My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></table>';
+  x.innerHTML = '<table><tbody><tr><th colspan="2"><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></th></tr><tr><td><a href="https://' + siteURL + '/log/">Blog</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion Log</a></td><td><a href="https://' + siteURL + '/luchino_shrine/">Luchino Fansite</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></tbody></table>';
   document.getElementById('lContainer').appendChild(x);
 }
 function rssBlock(){
-  const x = document.createElement("div");
   const y = document.createElement("h1");
-  y.innerHTML = 'Latest Site Update';
-  x.innerHTML = '<script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script>';
-  x.setAttribute('class', 'feedBlock');
+  y.innerHTML = 'Latest Site Update <a href="log/update/">(read more @ update log)</a>';
   document.getElementById('rContainer').appendChild(y);
-  document.getElementById('rContainer').appendChild(x);
+  document.write('<div class="feedBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div>');
 }
 function updateIcon(){
   const x = document.createElement('img');
