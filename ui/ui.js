@@ -38,7 +38,7 @@ function browsePosts(){
 }
 function rssBlock(){
   const y = document.createElement("h1");
-  y.innerHTML = 'Latest Site Update <a href="log/update/">(read more @ update log)</a>';
+  y.innerHTML = 'Latest Site Update <a href="https://' + siteURL + '/log/update/">(read more @ update log)</a>';
   document.getElementById('rContainer').appendChild(y);
   document.write('<div class="feedBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div>');
 }
