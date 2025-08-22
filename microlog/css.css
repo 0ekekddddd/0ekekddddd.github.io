@@ -12,5 +12,5 @@
 #rContainer > div {background: #ffffff !important;}}
 #rContainer, #imgPreview{img{cursor:pointer;}}
 .banner{
-  background:url('ui/aatp_banner.png') !important;
+  background:url('../ui/tree_post/nikon.png') !important;
 }

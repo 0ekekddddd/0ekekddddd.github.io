@@ -22,4 +22,4 @@ mark {background: #00000030;}
 #rContainer {
   h1{background: url("layout_pieces/bill_scales_texture.gif")repeat-x 0px 4px;}
 }
-.banner{min-height:200px; background:url('layout_pieces/nav.png') !important;}
+.banner{min-height:200px; background:url('../ui/tree_post/luchino.png') !important;}
