@@ -1,0 +1,34 @@
+:root{
+  --browserColor:#d4cbb2;
+}
+@font-face {font-family: "bazinga"; src: url("../fonts/bazinga-tadc.otf");}
+@font-face {font-family: "bazinga"; src: url("../fonts/bazinga-tadc.otf");}
+html{
+  font-family:'ms gothic', sans-serif;
+  font-size:12px;
+}
+body{
+  background: url(orb.png) no-repeat 90px, linear-gradient(180deg, #6b9cdb 0%, #00000000 30%, #00000000 100%), linear-gradient(0deg, #00000000 0%, #ffffff 50%, #00000000 50%, #00000000 100%), #b8e1ff; background-size:90px; background-attachment:fixed;
+  height:100vh;
+}
+h1, h2, h3, h4{ background:0;}
+button{background: url('ui/window_set.png') no-repeat, var(--browserColor); border:1px #000000 solid; height: 21px;width:20px;margin:-0px -0px; pointer-events:auto;}
+button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
+#inBody, button{box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff; padding:2px;}
+#inContent{ width:95%;}
+#inBody{ background: var(--browserColor); border:1px #000000 solid;box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff; margin:20px auto; width:500px; cursor:default;pointer-events:none;
+  #inContent, .fauxField{background:#ffffff; border:var(--browserColor) 3px inset;padding:1px 4px 1px 4px; margin: 0 auto; cursor:default;
+    h1{ font-family:bazinga; text-align:center; box-shadow:none !important;}
+	img{ width:95%; margin:0 auto;}
+  }
+  > h1{background:#807c73; font-size:12px; margin:0 auto; color:#ffffff; padding:4px 3px 4px 3px;}
+  > div{border-bottom:1px solid #000000; padding-bottom:2px; margin:3px 0px 0px 0px;}
+  > div{ padding: 1px 5px 1px 5px !important;}
+}
+.flex{display:flex;
+  > div{width:auto !important;}
+}
+p{margin:1px 4px 1px 4px;}
+.fauxField{margin:-4px 0px 0px 0px; width:100%;}
+.minmaxDec{background-position:top left -15px;}
+.closeDec{background-position:top left -34px;}
